@@ -1,0 +1,29 @@
+{
+  "name": "sync-s3-action",
+  "version": "0.0.1",
+  "description": "GitHub Action to sync an S3 bucket with a folder.",
+  "main": "index.js",
+  "scripts": {
+    "build-dist": "export NODE_OPTIONS=--openssl-legacy-provider && ncc build index.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [
+    "github",
+    "action",
+    "aws",
+    "s3",
+    "sync"
+  ],
+  "author": "Richard Moore <me@ricmoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "1.10.0",
+    "@aws-sdk/client-cloudfront": "3.181.0",
+    "@aws-sdk/client-s3": "3.181.0",
+    "aws-sdk": "2.1227.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "0.22.3"
+  }
+}
