@@ -41,7 +41,7 @@ jobs:
           aws_s3_bucket: ${{ secrets.AWS_BUCKET }}
           source_folder: 'foo/bar/'
           source_prefix: 'foo/'
-          destination-prefix: 'another-foo/'
+          destination_prefix: 'another-foo/'
           aws_cloudfront_id: ZQWX4KGLS45
 ```
 
