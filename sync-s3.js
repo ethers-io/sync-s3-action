@@ -80,7 +80,7 @@ export async function syncS3(options) {
     const cloudfront = new CloudFront(credentials);
 
     const paths = walk(options.sourceFolder);
-    console.log(`Found ${ paths.length } files.`);
+    console.log(`Uploading ${ paths.length } files to ${ options.bucket }.`);
 
     const sourcePrefix = resolve(options.sourcePrefix || options.sourceFolder);
 
