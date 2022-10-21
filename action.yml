@@ -21,7 +21,7 @@ inputs:
     description: 'Prefix to remove from source paths'
     required: false
   destination_prefix:
-    description: 'Prefix to add to S3 keys (recommended to end in a '/')'
+    description: 'Prefix to add to S3 keys (recommended to end in a /)'
     required: false
   aws_cloudfront_id:
     description: 'AWS Cloudfront Distribution ID to flush'
